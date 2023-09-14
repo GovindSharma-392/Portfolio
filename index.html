@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav class="navbar" >
+        <img src="LOGO.png" class="logo" alt="logo">
+        <span class="navtext">Govind Sharma</span>
+        <a href="#About" class="nav-button scroll-link">About</a>
+        <a href="#Education" class="nav-button scroll-link">Education</a>
+        <a href="#Hobbies" class="nav-button scroll-link">Hobbies</a>
+        <a href="#Project" class="nav-button scroll-link">Projects</a>
+        <a href="#Social" class="nav-button scroll-link">Social</a>
+        <a href="#Links" class="nav-button scroll-link">Links</a>
+
+
+    </nav>
+    <div class="container">
+        
+        <div class="card">
+            <img src="IMG_20220819_103812_383.jpg" alt="My Picture">
+            <div class="card-text">Govind Sharma</div>
+            
+        </div>
+        <div class="text1">
+            <span>Govind Sharma</span>
+            <div class="text2">
+                <h1>
+                    <span>I'm</span>
+                    <span>a</span>
+                    <span>Web</span>
+                    <span>Developer</span>
+                </h1>
+            </div>
+            <div class="text3">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia exercitationem dicta vitae nostrum veniam? Explicabo dicta iste placeat eligendi soluta, dolore aspernatur cupiditate, , culpa minus ipsa harum. Doloremque, accusamus.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="container" id="About" >
+        <div >
+            <Span class="text1">I'm Govind<Span>
+            <h3 class="text3">Passionate For Developmwnt</h3>
+            <button class="button" id="toggleButton">INFO</button>
+            <div class="collapse-content" id="infoCollapse">
+                <div class="info">
+                    <h5 class="text3">Name: Govind Sharma</h5>
+                    <h5 class="text3">Contact: 9528246962</h5>
+                    <h5 class="text3">Email: govindumeshsharma@gmail.com</h5>
+                    <h5 class="text3">Address: Sahukara,Chandausi,U.P,India</h5>
+                </div>
+            </div>
+        </div>
+        <div class="card2">
+            <img src="1691211395928.jpg" alt="Image2">
+        </div>
+    </div>
+        
+    </div>
+    <div>
+        <h3 class="text4">Education</h3>
+    </div>
+    <div class="container" id="Education">
+        <div class="card-edu">
+            <img src="RRK.jpeg" alt="Image2">
+            <h1>10th</h1>
+            <h4>School Name : R.R.K sr sec school</h4>
+            <h3>Score: 72.2%</h3>
+        </div>
+        <div class="card-edu">
+            <img src="RRK.jpeg" alt="Image2">
+            <h1>12th</h1>
+            <h4>School Name : R.R.K sr sec school</h4>
+            <h3>Score: 68.4%</h3>
+        </div>
+        <div class="card-edu">
+            <img src="GLA.jpeg" alt="Image2">
+            <h1>B.tech</h1>
+            <h4>College Name : GLA University</h4>
+            <h3>CPI: 7.1</h3>
+        </div>
+    </div>
+    <div class="text4">HOBBIES</div>
+    <div class="container" id="Hobbies">
+        <div class="card-hob">
+            <img src="music.jpeg" alt="Music">
+            <h1>MUSIC</h1>
+        </div>
+        <div class="card-hob">
+            <img src="writing.jpeg" alt="Image2">
+            <h1>WRITING</h1>
+        </div>
+    </div>
+    <div class="text4">PROJECTS</div>
+    <div class="container" id="Project">
+        <div class="card-proj">
+            <img src="tic tac toe.jpeg" alt="Music">
+            <h1>TIC TAC TOE</h1>
+        </div>
+        <div class="card-proj">
+            <img src="CRUD.jpeg" alt="Image2">
+            <h1>CRUD</h1>
+        </div>
+        <div class="card-proj">
+            <img src="thermometer.jpg" alt="Image2">
+            <h1>TEMPCRAFT</h1>
+        </div>
+    </div>
+    <div class="text4">SOCIALS</div>
+    <div class="container" id="Social">
+        <a href="https://www.facebook.com/govindumeshsharma" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/GovindS87005227?t=Aflurh-maudSEAIPQ5ZIiA&s=09" class="fa fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/govind-sharma-b44300232" class="fa fa-linkedin"></a>
+    <a href="https://instagram.com/govindsharma392?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" class="fa fa-instagram"></a>
+    </div>
+    <div id="scroll-up-btn">
+        <button id="scroll-btn">^</button>
+    </div>
+    <div class="contact-details">
+           
+        <span class="text5">Thank's for Visiting</span>
+
+        <h3>Contact Details</h3>
+        <p>Email: govindumeshsharma@gmail.com</p>
+        <p>Phone: 9528246962</p>
+        <p>Location: Sahukara, Chandausi, U.P, India</p>
+    </div>
+    <!-- <nav class="footer">
+       
+    </nav> -->
+    
+</body>
+</html>
+<script>
+    document.getElementById("toggleButton").addEventListener("click", function() {
+        var infoCollapse = document.getElementById("infoCollapse");
+        var rectangleBox = document.getElementById("rectangleBox");
+        
+        if (infoCollapse.style.display === "block") {
+            infoCollapse.style.display = "none";
+            rectangleBox.style.display = "block";
+        } else {
+            infoCollapse.style.display = "block";
+            rectangleBox.style.display = "none";
+        }
+    });
+    
+    document.querySelectorAll(".scroll-link").forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+    
+    document.getElementById("scroll-btn").addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+
+
+</script>
